@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,body,.page{
+    min-height: 100vh;
+}
+
+header{
+    background-color: bisque;
+    text-align: center;
+    font-size:xx-large;  
+}
+main nav{
+    display: inline-block;
+
+}
+
+nav img{
+    width: 100%;
+    flex-direction:row; 
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img{
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    display: block;
+}
+.slideshow{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.slideshow a{
+    flex-basis: auto;
+}
+footer{
+    color: darksalmon;
+    text-align: center;
+    font-size:medium; 
+    margin-top: 30px; 
+    padding: 20px;
+    background-color: brown;  
+}
+@media screen and (min-width:200px ) and (max-width:700px){
+    nav img{
+        width:65%;
+        text-align:center;
+    }
+    header{
+        padding:3em;
+        font-size: medium;
+    }
+    
+}
+@media screen and (min-width:701px) and (max-width:1500px){
+    nav img{
+        width:70%;
+        margin-left:25px;
+        text-align: center;
+    }
+}
+@media screen and (min-width:1501px){
+    header{
+        width:100%;
+        overflow: hidden;
+    }
+    header h1{
+        display:block;
+    }    
+}

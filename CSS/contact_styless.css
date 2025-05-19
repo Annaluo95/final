@@ -1,0 +1,48 @@
+*{
+    margin: 10px;
+    padding:0;
+    font-family: fantasy;
+    text-align: center;
+}
+header{
+    background-color: pink;
+    text-align: center;   
+}
+div.section{
+    color: brown;
+    font-size: xx-large;
+}
+footer{
+    color: black;
+    background-color: cadetblue;
+    padding: 5px;
+    text-align: center;
+}
+@media screen and (min-width:200px ) and (max-width:700px){
+    header{
+        padding: 3em;
+    }
+    nav img{
+        width:100%
+    }
+    
+}
+@media screen and (min-width:701px) and (max-width:1500px){
+    header{
+        margin-top: 10px;
+    }
+    nav img{
+        width:50%;
+        margin-left:25px;
+        text-align: center;
+    }
+}
+@media screen and (min-width:1501px){
+    header{
+        width:100%;
+        overflow: hidden;
+    }
+    header h1{
+        display:block;
+    }    
+}
